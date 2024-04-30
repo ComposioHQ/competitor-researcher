@@ -1,0 +1,9 @@
+composio_crewai>=0.2.22, <=0.2.36
+crewai==0.28.8
+flask
+openai
+beautifulsoup4
+langchain_openai
+gunicorn
+flask_cors
+gevent
