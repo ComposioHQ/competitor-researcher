@@ -141,7 +141,7 @@ def get_info(cleaned_html: str) -> str:
                 },
                 {
                     "role": "user",
-                    "content": f"This is the data of the website of one of my competitors. I want a point-wise analysis. Don't repeat yourself and be to the point on whatever you say don't add uneccessary information. Include some stats with actual numbers, apply your own knowledge if you know about the said product but keep the data that I provide as the top priority. Have at least 7-8 points. Keep the whole thing under 2500 characters. \n Website Data: {cleaned_html}",
+                    "content": f"This is the data of the website of one of my competitors. I want a point-wise analysis. Don't repeat yourself and be to the point on whatever you say don't add uneccessary information. Include some stats with actual numbers, DO NOT FILL ANYTHING THAT'S NOT IN THE DATA. Analyse the data that I give you, DO NOT APPLY YOUR OWN BRAIN. Have at least 7-8 points. Keep the whole thing under 2500 characters. \n Website Data: {cleaned_html}",
                 },
             ],
         )
