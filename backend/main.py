@@ -4,7 +4,7 @@ import time
 import requests
 from bs4 import BeautifulSoup
 from openai import OpenAI, OpenAIError
-from composio_crewai import ComposioToolset, App, ComposioSDK
+from composio_crewai import omposioToolSet, App, ComposioSDK
 from crewai import Agent, Task
 from langchain_openai import ChatOpenAI
 import logging
@@ -23,7 +23,7 @@ OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
 if not OPENAI_API_KEY:
     raise ValueError("OPENAI_API_KEY environment variable must be set.")
 
-llm = ChatOpenAI(openai_api_key=OPENAI_API_KEY, model="gpt-4-turbo")
+llm = ChatOpenAI(openai_api_key=OPENAI_API_KEY, model="gpt-4o")
 
 def step_parser(step_output):
     action_log = ""
